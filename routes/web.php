@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/semester/{number}', ['as'   => 'semester',
+                                  'uses' => 'Admin\SemesterController@index']);
+Route::get('/ideas/', ['as'   => 'ideas',
+                                  'uses' => 'Admin\IdeasController@index']);

@@ -43,7 +43,35 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        &nbsp;@if (Auth::check())
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="true">Semester<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 1]) }}">FIRST SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 2]) }}">SECOND SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 3]) }}">THIRD SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 4]) }}">FOURTH SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 5]) }}">FIFTH SEMETRE</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 6]) }}">SIXTH SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 7]) }}">SEVENTH SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 8]) }}">EIGHTH SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 9]) }}">NINTH SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{{ route('semester', ['number' => 10]) }}">TENTH SEMESTER</a></li>
+                                    <li role="separator" class="divider"></li>
+                                </ul>
+                            <li><a href="{{ route('ideas') }}">My ideas</a></li>
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->

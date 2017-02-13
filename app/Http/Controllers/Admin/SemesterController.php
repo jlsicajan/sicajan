@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class SemesterController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -21,9 +22,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($number)
     {
-
-        return view('home');
+        $data = ['semester_number' => $number];
+        return view('admin.semester.index')->with($data);
     }
 }

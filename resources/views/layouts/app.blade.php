@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-
+    @yield('after_styles')
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -111,5 +111,6 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    @yield('after_scripts')
 </body>
 </html>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('after_styles')
-
+    <link href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" rel="stylesheet">
 @endsection
 @section('content')
     <div class="container">
@@ -35,8 +35,18 @@
     </div>
 @endsection
 @section('after_scripts')
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js" charset="UTF-8"></script>
     <script>
         $(document).ready(function () {
+            oTable = $('#semester_datatable').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "{{ route('datatable.semesters') }}",
+                "columns": [
+                    {data: 'name', name: 'name'},
+                ]
+            });
             var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
             $('#form_semester').on('submit', function (e) {
                 $.ajax({
@@ -49,17 +59,10 @@
                     success: function (data) {
                         alert(data['message']);
                         $('#form_semester').trigger("reset");
+                        oTable.ajax.reload(null, false);
                     }
                 });
                 return false;
-            });
-            oTable = $('#semester_datatable').DataTable({
-                "processing": true,
-                "serverSide": true,
-                "ajax": "{{ route('datatable.semesters') }}",
-                "columns": [
-                    {data: 'name', name: 'name'},
-                ]
             });
         });
     </script>

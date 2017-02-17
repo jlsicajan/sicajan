@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Semester;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Input;
+use Yajra\Datatables\Facades\Datatables;
 
 class SemesterController extends Controller
 {
@@ -40,12 +42,17 @@ class SemesterController extends Controller
     }
 
     public function save(){
-        print_r('hoa');die();
         $semester = new Semester();
         $semester->name = Input::get('name');
         $semester->save();
         $data = array('message' => 'Dato ingresado correctamente.');
         return $data;
+    }
+
+    public function getSemesters(){
+        $semesters = Semester::select(['name']);
+
+        return Datatables::of($semesters)->make(true);
     }
 
 }

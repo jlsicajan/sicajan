@@ -27,5 +27,5 @@ Route::get('/ideas/', ['as'   => 'ideas',
 Route::post('/save/semester', ['as'   => 'save.semester.data',
                              'uses' => 'Admin\SemesterController@save']);
 
-//AJAX FOR DATATABLES
-Route::get('/ajax/semester', ['uses' => 'Admin\SemesterController@ajax', 'as' => 'semester.data.ajax']);
+//DATATABLE
+Route::get('/datatable/semester', 'Admin\SemesterController@getSemesters')->name('datatable.semesters');

@@ -55,6 +55,7 @@
                                     <li role="separator" class="divider"></li>
                                 </ul>
                             <li><a href="{{ route('ideas') }}">My ideas</a></li>
+                            <li><a href="{{ route('knowledge') }}">List</a></li>
                         @endif
                     </ul>
 

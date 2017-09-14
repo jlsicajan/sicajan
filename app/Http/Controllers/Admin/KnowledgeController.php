@@ -31,10 +31,19 @@ class KnowledgeController extends Controller
     public function save(){
         $learn = Input::get('learn');
 
-        $today = Knowledge::firstOrNew(array('published_at' => date('Y-m-d'), 'user_id' => Auth::id()));
-        $today->knowledge = $learn;
-        $today->user_id = Auth::id();
-        $today->save();
+        $data_today = Knowledge::where("published_at", '=', date('Y-m-d'))->where("user_id", "=", Auth::id())->first();
+
+        if(empty($data_today)){
+            $today = new Knowledge();
+            $today->published_at = date('Y-m-d');
+            $today->knowledge = $learn;
+            $today->user_id = Auth::id();
+            $today->save();
+        }else{
+            $data_today->knowledge = $learn;
+            $data_today->save();
+        }
+
 
     }
 }

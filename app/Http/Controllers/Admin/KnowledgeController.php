@@ -20,7 +20,7 @@ class KnowledgeController extends Controller
 
     public function index()
     {
-        $knowledge_of_today = Knowledge::where('published_at', '=', date('Y-m-d'))->first();
+        $knowledge_of_today = Knowledge::where('published_at', '=', date('Y-m-d'))->where('user_id', '=', Auth::id())->first();
 
         $learning_today = $knowledge_of_today ? $knowledge_of_today->knowledge : "Nothing for today";
 

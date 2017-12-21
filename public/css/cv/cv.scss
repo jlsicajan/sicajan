@@ -9,6 +9,7 @@
 //}
 body{
   background-color: #DAEBF2;
+  overflow-x: hidden !important;
 }
 //Navbar style
 $nav_background: #1ca5b8;
@@ -101,6 +102,43 @@ $type_font: 'Open Sans', Arial, sans-serif;
     &:hover {
       color: $colHighlight;
     }
+  }
+}
+
+.give_space{
+  margin-left: calc(100vw - 75vw);
+}
+
+.m-l-500{
+  margin-left: 500px;
+}
+
+.profile{
+  height: 100vh;
+  width: calc(100vw - 75vw);
+  //width: 100vw;
+  max-width: 500px;
+  background-color: #ffff;
+  position: fixed;
+  box-shadow: 1px 3px 17px #888888;
+
+  .image{
+    //position: absolute;
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    //filter: blur(2px);
+  }
+
+  .user-info{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 

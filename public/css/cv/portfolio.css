@@ -1,0 +1,37 @@
+.page {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 1px 3px 17px #888888;
+  margin: 1rem; }
+
+.row {
+  margin-left: unset !important; }
+
+.thumbnail {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  text-align: center; }
+  .thumbnail .url_container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.3;
+    background-color: gray;
+    left: 0; }
+    .thumbnail .url_container .page_url {
+      color: white; }
+    .thumbnail .url_container .page_url:hover {
+      text-decoration: none; }
+
+.description_container {
+  display: grid; }
+  .description_container .project_description {
+    padding: 1rem; }
+  .description_container .project_description:first-letter {
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,77 @@
+body {
+  background-color: #DAEBF2;
+  overflow-x: hidden !important; }
+
+.navbar-default {
+  background-color: #1ca5b8;
+  border: 0px solid #1ca5b8;
+  border-radius: 0px;
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-weight: bold; }
+  .navbar-default .navbar-brand {
+    color: #daebf2; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #daebf2; }
+  .navbar-default .navbar-text {
+    color: #daebf2; }
+  .navbar-default .navbar-nav > li > a {
+    color: #daebf2; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #daebf2; }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #daebf2;
+    background-color: #00708c; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #daebf2;
+    background-color: #00708c; }
+  .navbar-default .navbar-toggle {
+    border-color: #00708c; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: #00708c; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #daebf2; }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #daebf2; }
+  .navbar-default .navbar-link {
+    color: #daebf2; }
+    .navbar-default .navbar-link:hover {
+      color: #daebf2; }
+
+.give_space {
+  margin-left: calc(100vw - 75vw); }
+
+.m-l-500 {
+  margin-left: 500px; }
+
+.profile {
+  height: 100vh;
+  width: calc(100vw - 75vw);
+  max-width: 500px;
+  background-color: #ffff;
+  position: fixed;
+  box-shadow: 1px 3px 17px #888888; }
+  .profile .image {
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center; }
+  .profile .user-info {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #daebf2; }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #daebf2; }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #daebf2;
+    background-color: #00708c; } }
+
+/*# sourceMappingURL=cv.css.map */

@@ -23,6 +23,7 @@ Route::get('/semester/{number}', ['as'   => 'semester',
 
 Route::get('/ideas/', ['as'   => 'ideas', 'uses' => 'Admin\IdeasController@index']);
 Route::get('/knowledge/', ['as'   => 'knowledge', 'uses' => 'Admin\KnowledgeController@index']);
+Route::get('/portafolio/', ['as'   => 'portafolio', 'uses' => 'PortafolioController@index']);
 
 //SAVE DATA
 Route::post('/save/semester', ['as'   => 'save.semester.data', 'uses' => 'Admin\SemesterController@save']);

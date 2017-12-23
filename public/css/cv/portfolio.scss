@@ -1,0 +1,49 @@
+.page{
+  background-color: white;
+  //height: 13vw;
+  //width: 13vw;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 1px 3px 17px #888888;
+  margin: 1rem;
+}
+
+.row{
+  margin-left: unset !important;
+}
+
+.thumbnail{
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  .url_container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.3;
+    background-color: gray;
+    left: 0;
+
+    .page_url{
+      color: white;
+    }
+
+    .page_url:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.description_container{
+  display: grid;
+  .project_description{
+    padding: 1rem;
+  }
+
+  .project_description:first-letter{
+    text-transform: uppercase;
+  }
+}

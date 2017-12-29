@@ -11,10 +11,12 @@
 .thumbnail {
   height: 200px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   position: relative;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  background-color: #ffffff; }
   .thumbnail .url_container {
     position: absolute;
     bottom: 0;
@@ -31,6 +33,10 @@
   display: grid; }
   .description_container .project_description {
     padding: 1rem; }
+  .description_container .title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px; }
   .description_container .project_description:first-letter {
     text-transform: uppercase; }
 

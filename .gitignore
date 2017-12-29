@@ -8,3 +8,4 @@ Homestead.yaml
 public/sass/knowledge/knowledge.css
 public/sass/knowledge/knowledge.css.map
 .env
+.sass-cache/*

@@ -1,15 +1,24 @@
 <div class="col-md-4 col-lg-3 col-sm-5 page">
     <div class="page_container">
-        <div class="thumbnail" style="background-image: url({{ asset("images/portfolio/google.jpg") }})">
+        <div class="thumbnail" style="background-image: url({{ asset($page->thumbnail) }})">
             <div class="url_container">
-                <a href="{{ $page->url }}" class="page_url">{{ $page->url }}</a>
+                @if(!empty($page->url))
+                    <a href="{{ $page->url }}" class="page_url" target="_blank">{{ $page->url }}</a>
+                @else
+                    <span class="page_url">Internal</span>
+                @endif
             </div>
         </div>
 
         <div class="description_container">
-            <span class="project_description">
-                {{ $page->description }}
+            <span class="title">
+                {{ $page->title }}
             </span>
+            <ul>
+                <li><p>{!! $page->time  !!}</p></li>
+                <li><p>{{ date('M Y', $page->date_start) }} - {{ date('M Y', $page->date_end) }}</p></li>
+                <li><p>{!! $page->work_title  !!}</p></li>
+            </ul>
             <button class="btn btn-success">More+</button>
         </div>
     </div>

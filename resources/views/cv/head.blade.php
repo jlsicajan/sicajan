@@ -1,5 +1,5 @@
 <div class="profile">
-    <div class="image" style="background-image: url({{ asset("images/profile/deathstroke.jpg") }})">asdas</div>
+    <div class="image" style="background-image: url('https://cdn-images-1.medium.com/max/1600/1*fm87fAluZi8ZtS231kgw1g.png')">asdas</div>
     <div class="user-info">
         Sed aliquam ultrices mauris. Aliquam lobortis. Praesent adipiscing. Phasellus gravida semper nisi. Suspendisse eu ligula.
 

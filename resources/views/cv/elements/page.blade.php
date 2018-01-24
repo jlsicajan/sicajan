@@ -19,7 +19,7 @@
                 <li><p>{{ date('M Y', $page->date_start) }} - {{ date('M Y', $page->date_end) }}</p></li>
                 <li><p>{!! $page->work_title  !!}</p></li>
             </ul>
-            <button class="btn btn-success">More+</button>
+            <button class="btn btn-success" onclick="wait_message()">More+</button>
         </div>
     </div>
 </div>

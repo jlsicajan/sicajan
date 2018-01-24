@@ -17,12 +17,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">HOME <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
+                <li><a onclick="wait_message()" href="#">HOME <span class="sr-only">(current)</span></a></li>
+                <li><a onclick="wait_message()" href="#">ABOUT</a></li>
+                <li><a onclick="wait_message()" href="#">SERVICES</a></li>
                 <li {{ (Request::is('portfolio') ? 'class=active' : '') }} ><a href="{{ route('portfolio') }}">PORTAFOLIO</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a onclick="wait_message()" href="#">BLOG</a></li>
+                <li><a onclick="wait_message()" href="#">CONTACT</a></li>
                 {{--<li class="dropdown">--}}
                     {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>--}}
                     {{--<ul class="dropdown-menu">--}}
@@ -44,6 +44,10 @@
     $(document).ready(function () {
         resize_update();
     });
+
+    function wait_message() {
+        alert("En desarrollo.");
+    }
 
     $(window).on('resize', function () {
         resize_update();

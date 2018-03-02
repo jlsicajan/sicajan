@@ -11,12 +11,14 @@
 </head>
 <body>
 <div class="profile">
-    <div class="image"></div>
+    <div class="background-profile-image">
+        <div class="profile-image"></div>
+    </div>
     <div class="user-info">
         Hi, I'm Jose Sicajan I'm a passionate web developer, perfectionist, with a high sense of responsibility, I like to get into new projects and leave a part of myself in them, giving importance to the smallest details. I have worked with several international clients and local clients in Guatemala and I have learned that constant communication with the client is a very effective tool in achieving objectives. Not only do I like web development, I have also learned how to create Android Apps and desktop applications.
     </div>
 </div>
-<nav class="navbar navbar-toggleable-md navbar-default bg-faded">
+<nav class="navbar navbar-toggleable-md navbar-custom bg-faded navbar-cv">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,19 +52,19 @@
     function resize_update() {
         console.log("Window width => " + $(window).width());
         if ($(window).width() > 1300) {
-            $('.navbar-default').addClass('give_space');
+            $('.navbar-cv').addClass('give_space');
             $('.container').addClass('give_space');
             $('.profile').show();
             if ($(window).width() > 2000) {
-                $('.navbar-default').removeClass('give_space');
-                $('.navbar-default').addClass('m-l-500');
+                $('.navbar-cv').removeClass('give_space');
+                $('.navbar-cv').addClass('m-l-500');
             }else{
-                $('.navbar-default').removeClass('m-l-500');
+                $('.navbar-cv').removeClass('m-l-500');
             }
         } else {
-            $('.navbar-default').removeClass('give_space');
+            $('.navbar-cv').removeClass('give_space');
             $('.container').removeClass('give_space');
-            $('.navbar-default').removeClass('m-l-500');
+            $('.navbar-cv').removeClass('m-l-500');
             $('.profile').hide();
         }
     }

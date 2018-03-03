@@ -16,7 +16,6 @@ class PortafolioController extends Controller
      */
     public function index()
     {
-        $data = ['pages' => Portafolio::all()];
-        return view('cv.portfolio')->with($data);
+        return view('cv.portfolio', ['pages' => Portafolio::all()]);
     }
 }

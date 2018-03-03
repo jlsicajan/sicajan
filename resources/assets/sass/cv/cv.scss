@@ -21,6 +21,9 @@ $heading_font: 'Oswald', Helvetica, sans-serif;
 $type_font: 'Open Sans', Arial, sans-serif;
 .navbar-custom {
   background-color: #5E001C;
+  .navbar-toggler{
+    border: 1px solid white !important;
+  }
 }
 
 /* change the brand and text color */

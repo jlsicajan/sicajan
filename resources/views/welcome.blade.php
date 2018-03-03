@@ -1,4 +1,4 @@
-@include('cv.app')
+@extends('cv.app')
 @section('content')
     <div class="container">
         <div class="row">

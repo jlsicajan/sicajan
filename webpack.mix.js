@@ -16,4 +16,6 @@ mix.js([
     'node_modules/bootstrap/dist/js/bootstrap.js',
     'resources/assets/js/app.js'], 'public/js/app.js')
 
+    .copy('resources/assets/js/cv/portfolio_manager.js', 'public/js/cv/portfolio_manager.js')
+
     .sass('resources/assets/sass/app.scss', 'public/css/');

@@ -11,6 +11,10 @@
             <div class="modal-body">
                 <p class="page-modal-description page-modal-info"></p>
                 <span class="page-modal-developer-experience page-modal-info text-muted"></span>
+                <hr>
+                <ul class="list-group page-modal-technologies-list">
+
+                </ul>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Ok</button>

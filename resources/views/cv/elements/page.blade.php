@@ -16,8 +16,6 @@
             </span>
             <ul>
                 <li><p>{!! $page->time  !!}</p></li>
-                <li><p>{{ date('M Y', $page->date_start) }} - {{ date('M Y', $page->date_end) }}</p></li>
-                <li><p>{!! $page->work_title  !!}</p></li>
             </ul>
             <button data-page-id="{{ $page->id }}" class="btn btn-success page-info" data-toggle="modal" data-target="#page_info_modal">More+</button>
         </div>

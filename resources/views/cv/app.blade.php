@@ -16,6 +16,7 @@
             integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
             crossorigin="anonymous"></script>
     <script src="/js/app.js"></script>
+    <link rel="shortcut icon" href="images/ico.png">
     @stack('head')
 </head>
 <body>
@@ -24,11 +25,18 @@
         <div class="profile-image"></div>
     </div>
     <div class="user-info">
+
+
         Hi, I'm Jose Sicajan I'm a passionate web developer, perfectionist, with a high sense of responsibility, I like
         to get into new projects and leave a part of myself in them, giving importance to the smallest details. I have
         worked with several international clients and local clients in Guatemala and I have learned that constant
         communication with the client is a very effective tool in achieving objectives. Not only do I like web
         development, I have also learned how to create Android Apps and desktop applications.
+
+        <hr>
+
+        Thank you for reading my portfolio. Hope it will help in understanding about some projects that I have worked.
+        All your questions related or any comments <a href="mailto:jlsicajan@gmail.com">jlsicajan@gmail.com</a>.
     </div>
 </div>
 <nav class="navbar navbar-toggleable-md bg-dark navbar-cv navbar-custom navbar-inverse">
@@ -36,18 +44,12 @@
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Jose Sicajan</a>
+    <a class="navbar-brand" href="javascript:;">Jose Sicajan</a>
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" onclick="wait_message()" href="#">HOME <span class="sr-only">(current)</span></a>
+            <li class="nav-item {{ (Request::is('portfolio') ? 'active' : '') }}">
+                <a class="nav-link" href="{{ route('portfolio') }}">PORTFOLIO</a>
             </li>
-            <li class="nav-item"><a class="nav-link" onclick="wait_message()" href="#">ABOUT</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="wait_message()" href="#">SERVICES</a></li>
-            <li class="nav-item {{ (Request::is('portfolio') ? 'active' : '') }}"><a class="nav-link"
-                                                                                     href="{{ route('portfolio') }}">PORTAFOLIO</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" onclick="wait_message()" href="#">BLOG</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="wait_message()" href="#">CONTACT</a></li>
         </ul>
     </span>
     </div>

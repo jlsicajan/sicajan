@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -23,6 +19,7 @@ Route::get('/semester/{number}', ['as'   => 'semester',
 
 Route::get('/ideas/', ['as'   => 'ideas', 'uses' => 'Admin\IdeasController@index']);
 Route::get('/knowledge/', ['as'   => 'knowledge', 'uses' => 'Admin\KnowledgeController@index']);
+Route::get('/', ['as'   => 'portfolio', 'uses' => 'PortafolioController@index']);
 Route::get('/portfolio/', ['as'   => 'portfolio', 'uses' => 'PortafolioController@index']);
 
 //SAVE DATA

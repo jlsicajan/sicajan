@@ -47,9 +47,6 @@
     <a class="navbar-brand" href="javascript:;">Jose Sicajan</a>
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item {{ (Request::is('portfolio') ? 'active' : '') }}">
-                <a class="nav-link" href="{{ route('portfolio') }}">PORTFOLIO</a>
-            </li>
         </ul>
     </span>
     </div>

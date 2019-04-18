@@ -7,10 +7,11 @@
 //  margin: 0;
 //
 //}
-body{
-  background-color: #d29d9c45;
-  overflow-x: hidden !important;
+body {
+    background-color: #d29d9c45;
+    overflow-x: hidden !important;
 }
+
 //Navbar style
 $nav_background: #1ca5b8;
 $nav_selected: #00708c;
@@ -20,122 +21,129 @@ $dropDown: false;
 $heading_font: 'Oswald', Helvetica, sans-serif;
 $type_font: 'Open Sans', Arial, sans-serif;
 .navbar-custom {
-  background-color: #5E001C;
-  .navbar-toggler{
-    border: 1px solid white !important;
-  }
+    background-color: #5E001C;
+
+    .navbar-toggler {
+        border: 1px solid white !important;
+    }
 }
 
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-  color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
 }
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-  color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
 }
 
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 /* for dropdown only - change the color of droodown */
 .navbar-custom .dropdown-menu {
-  background-color: #ff5500;
+    background-color: #ff5500;
 }
+
 .navbar-custom .dropdown-item {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus {
-  color: #333333;
-  background-color: rgba(255,255,255,.5);
-}
-.give_space{
-  margin-left: calc(100vw - 75vw);
+    color: #333333;
+    background-color: rgba(255, 255, 255, .5);
 }
 
-.m-l-500{
-  margin-left: 500px;
+.give_space {
+    margin-left: calc(100vw - 75vw);
 }
 
-.profile{
-  height: 100vh;
-  width: calc(100vw - 75vw);
-  //width: 100vw;
-  max-width: 500px;
-  background-color: #ffff;
-  position: fixed;
-  box-shadow: 1px 3px 17px #888888;
+.m-l-500 {
+    margin-left: 500px;
+}
 
-  .profile-image{
-    background-image: url("/images/profile/jl.jpg");
-    position: absolute;
-    height: 80%;
-    width: 49%;
-    background-size: cover;
-    left: 0;
-    right: 0;
-    top: 55%;
-    margin: auto;
-    border-radius: 100%;
-    background-repeat: no-repeat;
-    margin-left: 20px;
-    background-position: center;
-  }
+.profile {
+    height: 100vh;
+    width: calc(100vw - 75vw);
+    //width: 100vw;
+    max-width: 500px;
+    background-color: #ffff;
+    position: fixed;
+    box-shadow: 1px 3px 17px #888888;
 
-  .background-profile-image{
-    background-image: url("/images/profile/background-1.jpg");
-    position: relative;
-    height: 30%;
-    width: 100%;
-    /* background-repeat: no-repeat; */
-    background-size: contain;
-    /* background-position-x: center; */
-  }
+    .profile-image {
+        background-image: url("/images/profile/jl.jpg");
+        position: absolute;
+        height: 30vh;
+        width: 30vh;
+        background-size: cover;
+        border-radius: 10%;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+        background-position: center;
+    }
 
-  .user-info{
-    position: absolute;
-    height: 70%;
-    width: 100%;
-    padding: 20px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin-top: 20%;
-  }
+    .background-profile-image {
+        background-image: url("/images/profile/background-3.jpg");
+        position: relative;
+        height: 30%;
+        width: 100%;
+        background-repeat: no-repeat;
+        kground-size: contain;
+        background-size: cover;
+    }
+
+    .user-info {
+        position: absolute;
+        height: 70%;
+        width: 100%;
+        padding: 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-top: 5%;
+        color: #52484b;
+    }
 }
 
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu {
-    > li > a {
-      color: $colDefault;
-      &:hover, &:focus {
-        color: $colHighlight;
-      }
+    .navbar-default .navbar-nav .open .dropdown-menu {
+        > li > a {
+            color: $colDefault;
+
+            &:hover, &:focus {
+                color: $colHighlight;
+            }
+        }
+
+        > .active {
+            > a, > a:hover, > a:focus {
+                color: $colHighlight;
+                background-color: $nav_selected;
+            }
+        }
     }
-    > .active {
-      > a, > a:hover, > a:focus {
-        color: $colHighlight;
-        background-color: $nav_selected;
-      }
-    }
-  }
 }
 
-.page-modal-technologies-list{
-  li{
-    strong{
-      font-size: 14px;
-    }
+.page-modal-technologies-list {
+    li {
+        strong {
+            font-size: 14px;
+        }
 
-    span{
-      font-size: 12px;
+        span {
+            font-size: 12px;
+        }
     }
-  }
 }
 
 //Navbar style end
+// main text
+.text-white {
+    color: white !important;
+}

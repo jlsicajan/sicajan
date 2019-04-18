@@ -54,7 +54,7 @@ class PortfoliosTableSeeder extends Seeder
                 'description' => 'The Renovation Roadmap™ is everything you need for a successful home remodel. The end result? A home you love. More info by them <a href="https://www.renovationroadmap.com/product/" target=\'_blank\'>page</a>',
                 'url' => 'https://www.renovationroadmap.com/',
                 'tools' => '{backend:["WORDPRESS"], frontend:["JQUERY", "HTML5", "SASS", "AJAX", "JS"], database:["mysql"], other:["Phanteon", "Kinsta", "InfusionSoft", "Memberium"]}',
-                'developer_experience' => "",
+                'developer_experience' => "The client wanted to change the way in which WordPress communicated with InfusionSoft, so we used Memberium to make this complete change to the system, login management, payments, profile data, and migrate the project from one server to another, making changes that include integrations with some AWS products (S3)",
                 'time' => "more than 219 hours working at <a href='http://www.lionmane.com/' target='_blank'>Lionmane Software</a>",
                 'costumer_name' => 'Dan Katz',
                 'costumer_feedback' => '',

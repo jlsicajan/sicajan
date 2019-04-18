@@ -57,7 +57,7 @@ class PortfoliosTableSeeder extends Seeder
                 'developer_experience' => "The client wanted to change the way in which WordPress communicated with InfusionSoft, so we used Memberium to make this complete change to the system, login management, payments, profile data, and migrate the project from one server to another, making changes that include integrations with some AWS products (S3)",
                 'time' => "more than 219 hours working at <a href='http://www.lionmane.com/' target='_blank'>Lionmane Software</a>",
                 'costumer_name' => 'Dan Katz',
-                'costumer_feedback' => '',
+                'costumer_feedback' => 'Jose Luis\' work was very good - the application was a challenging, custom Wordpress/Infusionsoft integration. I would not hesitate to work with JL again in a different context, but unfortunately the agency he worked with left something to be desired around communication and adhering to commitments.',
                 'date_start' => '1509510503',
                 'date_end' => '1514522991',
                 'images' => '',

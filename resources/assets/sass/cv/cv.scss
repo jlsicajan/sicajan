@@ -142,8 +142,16 @@ $type_font: 'Open Sans', Arial, sans-serif;
     }
 }
 
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
 //Navbar style end
 // main text
 .text-white {
     color: white !important;
+}
+
+.text-black {
+    color: black !important;
 }

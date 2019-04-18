@@ -37,6 +37,9 @@
 
         Thank you for reading my portfolio. Hope it will help in understanding about some projects that I have worked.
         All your questions related or any comments <a href="mailto:jlsicajan@gmail.com">jlsicajan@gmail.com</a>.
+
+        <hr>
+        <strong>Follow me:   <a href="https://www.linkedin.com/in/sicajancoy/" class="cursor-pointer" target="_blank"><i class="fa fa-linkedin text-black"></i></a>  <a href="https://github.com/jlsicajan" class="cursor-pointer" target="_blank"><i class="fa fa-github text-black"></i></a></strong>
     </div>
 </div>
 <nav class="navbar navbar-toggleable-md bg-dark navbar-cv navbar-custom navbar-inverse">
